@@ -4,7 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Website Assignment:</title>
+    <title>HOUSE Details page:</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7418ccfaa5.js" crossorigin="anonymous"></script>
 </head>
+<body>
+    <nav id="bar" class="bar-white">
+        <a href="index.html">
+            <img src="images/symbol.jpg" class="symbol">
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="#" class="active">RENT</a></li>
+            <li><a href="#">BUY</a></li>
+            <li><a href="show.html">Most Searched</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Here</a>
+        <i class="fas fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Wenge House</h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>254 Reviews</span>
+                </div>
+            </div>
+            <div>
+                <p style="margin-top: -30px;">Location: Thane, Maharashtra, Mumbai</p>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-l"><img src="images/house-1.png"></div>
+            <div><img src="images/house-2.png"></div>
+            <div><img src="images/house-3.png"></div>
+            <div><img src="images/house-4.png"></div>
+            <div><img src="images/house-5.png"></div>
+        </div>
+        <div class="small-details">
+            <h2 style="margin-top: -30px;">Entire rental unit is Displayed Here</h2>
+            <p style="margin-top: -30px;">Living room &nbsp; &nbsp; Hall &nbsp; &nbsp; Kitchen &nbsp; &nbsp; Bed room</p>
+            <h4 style="margin-top: -30px;">Rs 20,000 /month</h4>
+            <hr class="line">
+            <form class="check-form">
+                <div>
+                    <label>House Available In :</label>
+                    <input type="text" placeholder=" Area">
+                </div>
+                <div>
+                    <label>Want Within :</label>
+                    <input type="text" placeholder=" Date">
+                </div>
+                <div>
+                    <label>Rent per month :</label>
+                    <input type="text" placeholder=" Add Area">
+                </div>
+                <button type="submit">Check Availability</button>
+            </form>
+
+            <ul class="property-details">
+                <h2>Property Details:</h2>
+                <li ><i class="fas fa-home"></i><b>Address :</b> Pooja Residence -
+                    <span style="margin-top: -35px;">Room No.22, Near Thane Railway, Viviyana Lane, Thane(west),Mumbai.</span>
+                </li>
+                <li><i class="fas fa-map-marker-alt"></i><b>Area :</b> 
+                    <span style="margin-top: -35px;">50sqft 2BHK, Pool, Garden.</span>
+                </li>
+                <li><i class="fas fa-car"></i><b>Parking :</b> 
+                    <span style="margin-top: -35px;">Available.</span>
+                </li>
+                <li><i class="fas fa-paint-brush"></i><b>Description :</b> 
+                    <span style="margin-top: -35px;">Remodeled to perfection! This beautiful home is located
+                        close to shopping and dining.Here are just a few of its wonderful features: cozy fireplace,
+                        new kitchen cabinets,stainless steel sink, modern quartz counter tops, wood flooring, remodeled
+                        bathrooms,freshly painted, central a/c, large back yard, and so much more! .</span>
+                </li>
+            </ul>
+            
+
+            <div class="map">
+                <hr class="line">
+                <h3 style="margin-left: 50px;">Location on Map</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120562.
+                1915499637!2d72.93141953807269!3d19.214040751920958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x3be7b8fcfe76fd59%3A0xcf367d85f7c50283!2sThane%2C%20Maharashtra!5e0!3m2!1sen!2sin!
+                4v1656351995613!5m2!1sen!2sin" 
+                width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <hr class="line">
+            </div>
+            <hr class="line">
+            <div class="agent">
+                <img src="images/11.jpg">
+                <div>
+                    <h2 >Agent : Shruti</h2>
+                    <p style="margin-top: -30px;"><span >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>&nbsp; &nbsp; 254 reviews &nbsp; &nbsp; Response Rate 100% &nbsp; &nbsp; Response Time: 60 min</p>
+                    <a class="contact-agent" href="#">Contact Agent</a>
+                </div>
+            </div>
+            
+        </div>
+        <div style="margin: 5% 0px 14px; margin-top: 120%;" class="footer">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright @ 2022, Web development project.</p>
+        </div>
+    </div>
+    </div>
+    <script>
+        var bar = document.getElementById("bar");
+        function togglebtn(){
+            bar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+</html>
