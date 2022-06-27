@@ -177,7 +177,7 @@ nav .fa-bars{
     display: none;
 }
 /*---------screen-----------*/
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 600px){
 
     .symbol{
         position: fixed;
@@ -227,7 +227,7 @@ nav .fa-bars{
     }
     .search-bar{
         width: 90%;
-        max-resolution: 30px auto;
+        margin: 30px auto;
         padding:20px 10px 30px ;
         border-radius: 5px;
     }
@@ -331,6 +331,8 @@ nav.bar-white .fa-bars{
     width: 37%;
     height: fit-content;
     float: right;
+    position: absolute;
+    font-size: x-large;
 }
 .sidebar h2{
     font-weight: 500;
@@ -355,19 +357,20 @@ nav.bar-white .fa-bars{
 .pagination{
     
     margin: 40px 0;
-    margin-top: 150vh;
+    margin-top: 210vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .pagination span{
-    font-size: 30px;
+    font-size: 20px;
     width: 10px 8px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
+    margin: 10px 30px;
 }
 .pagination img{
     width: 15px;
@@ -375,4 +378,9 @@ nav.bar-white .fa-bars{
 }
 .right-arrow{
     transform: rotate(180deg);
+}
+.pagination .current{
+    background: #333;
+    color: #fff;
+    width: 38px;
 }
